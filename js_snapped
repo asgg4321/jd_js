@@ -6,12 +6,12 @@ function go() {
     //console.log("host:" + window.location.hostname);
     count++;
     // iPhone X go set time
-    if (Date.now() >= new Date("2017-11-03 15:59:59")) {
-        console.log("开始抢购iPhone X" + Date.now());
+    if (Date.now() >= new Date("2020-12-31 23:59:59")) {
+        console.log("开始抢购:" + Date.now());
 
         // iphoneX 抢购
         if ($(parent.frames[0].document).find("#choose-btn-ko").length == 1) {
-            console.log("(++++++++++++iphoneX 抢购");
+            console.log("(++++++++++++ 抢购");
             var sku = window.location.pathname.replace(/[^0-9]/ig, "");
             var ref = "//cart.jd.com/gate.action?pid=" + sku + "&pcount=1&ptype=1";
             console.log("https:" + ref);
