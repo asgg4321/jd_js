@@ -2,14 +2,14 @@ var nIntervId;
 var count = 1;
 var goDate;
 function go() {
-    console.log("小桃子 ^_^ 正在帮你抢购＊＊＊＊＊＊＊＊＊＊＊＊＊ 刷新" + count + "次");
+    console.log("^_^ 正在帮你抢购＊＊＊＊＊＊＊＊＊＊＊＊＊ 刷新" + count + "次");
     //console.log("host:" + window.location.hostname);
     count++;
-    // iPhone X go set time
+    // go set time
     if (Date.now() >= new Date("2020-12-31 23:59:59")) {
         console.log("开始抢购:" + Date.now());
 
-        // iphoneX 抢购
+        // 抢购
         if ($(parent.frames[0].document).find("#choose-btn-ko").length == 1) {
             console.log("(++++++++++++ 抢购");
             var sku = window.location.pathname.replace(/[^0-9]/ig, "");
